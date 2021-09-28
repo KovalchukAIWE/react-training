@@ -1,0 +1,14 @@
+@import './additionalStyles/mixins';
+@import './additionalStyles/variables';
+@import './components/header/header';
+@import './components/bg/bg';
+@import './components/our-mission/our-mission';
+@import './components/team-squares/team-squares';
+@import './components/cover-primary/cover-primary';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}

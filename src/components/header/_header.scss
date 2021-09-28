@@ -1,0 +1,28 @@
+.header-sticky {
+  position: sticky;
+  z-index: 6;
+  top: 0;
+  background-color: $c-grey;
+}
+
+.navigation {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items {
+  color: white;
+  padding: 20px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.items:hover {
+  background-color: #807d76;
+  cursor: pointer;
+}
