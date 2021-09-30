@@ -8,7 +8,7 @@
   justify-content: center;
   position: relative;
   @include mq-desktop {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 170px 20px;
   }
 }
