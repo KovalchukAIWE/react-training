@@ -1,16 +1,20 @@
+$fs-144: 144px;
 $fs-72: 72px;
 $fs-48: 48px;
 $fs-46: 46px;
 $fs-38: 38px;
+$fs-36: 36px;
 $fs-34: 34px;
 $fs-24: 24px;
 $fs-20: 20px;
 
+$fs-title: $fs-144;
 $fs-title-m: $fs-72;
 $fs-title-s: $fs-46;
 
 $fs-subtitle-m: $fs-48;
 $fs-subtitle-s: $fs-38;
+$fs-subtitle: $fs-36;
 
 $fs-description-m: $fs-34;
 $fs-description-s: $fs-24;
@@ -30,6 +34,8 @@ $fw-light: $fw-400;
 
 $c-blue: #2299EF;
 $c-grey: #4F4F4F;
+$c-white: #FCF7F7;
 
 $c-bg: $c-blue;
 $c-text: $c-grey;
+$c-text-white: $c-white;

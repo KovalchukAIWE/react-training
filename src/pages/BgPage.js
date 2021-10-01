@@ -3,9 +3,7 @@ import BackGround from '../components/bg/Bg';
 
 const BgPage = () => {
   return (
-    <>
       <BackGround />
-    </>
   );
 }
 

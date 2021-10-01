@@ -3,9 +3,7 @@ import CoverPrimary from '../components/cover-primary/CoverPrimary';
 
 const CoverPrimaryPage = () => {
   return (
-    <div>
       <CoverPrimary />
-    </div>
   );
 }
 

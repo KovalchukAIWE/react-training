@@ -3,9 +3,7 @@ import TeamSquares from '../components/team-squares/TeamSquares';
 
 const TeamSquaresPage = () => {
   return (
-    <div>
       <TeamSquares />
-    </div>
   );
 }
 

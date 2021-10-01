@@ -1,23 +1,23 @@
-.header {
+.background {
   width: 100vw;
   height: 100vh;
   background-image: url(../../images/Bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-.header-text {
-  color: #FCF7F7;
-  height: inherit;
-  margin: 0 auto;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-weight: 800;
-  font-size: $fs-title-s;
-  text-shadow: 4px 4px #73777A;
-  @include mq-tablet {
-    font-size: $fs-title-m;
+  &__text {
+    color: #FCF7F7;
+    height: inherit;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: $fs-title-s;
+    text-shadow: 4px 4px #73777A;
+    @include mq-tablet {
+      font-size: $fs-title-m;
+    }
   }
 }

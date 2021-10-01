@@ -1,0 +1,44 @@
+.background-primary {
+  width: 100vw;
+  height: 100vh;
+  background: #2299EF;
+  &__text {
+    color: $c-text-white;
+    height: inherit;
+    margin: 0 auto;
+    width: 63%;
+    padding-top: 150px;
+    font-weight: 800;
+    font-size: $fs-title-s;
+    @include mq-tablet {
+      font-size: $fs-title-m;
+    }
+  }
+}
+
+.cards-wrapper {
+  width: 90%;
+  @include df;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -400px;
+}
+
+.card {
+  width: 344px;
+  @include df;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  color: $c-text-white;
+  &__title {
+    font-size: $fs-subtitle-m;
+    font-weight: $fw-semi-bold;
+  }
+  &__subtitle {
+    font-size: $fs-subtitle;
+    font-weight: $fw-light;
+  }
+
+}
