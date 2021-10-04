@@ -1,0 +1,80 @@
+// @import '../../styles/mixins.module';
+// @import '../../styles/variables.module';
+
+.team-squares {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @include mq-desktop {
+    justify-content: space-around;
+    padding: 170px 20px;
+  }
+}
+
+.text {
+  color: #4F4F4F;
+  width: 550px;
+  text-align: center;
+  @include mq-desktop {
+    text-align: left;
+  }
+
+  &__title {
+    margin-top: 150px;
+    font-size: $fs-title-s;
+    font-weight: $fw-bold;
+    @include mq-tablet {
+      font-size: $fs-title-m;
+    }
+    @include mq-desktop {
+      margin-top: 0;
+    }
+  }
+
+  &__description{
+    font-size: $fs-description-s;
+    font-weight: $fw-light;
+    @include mq-tablet {
+      font-size: $fs-description-m;
+    }
+  }
+}
+
+.teammates {
+  color: $c-text;
+  width: 630px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__card {
+    width: 315px;
+    height: 170px;
+    display: flex;
+    padding: 15px 0 15px 15px;
+  }
+
+  &__photo {
+    width: 90px;
+    height: 90px;
+    @include mq-tablet {
+      width: 140px;
+      height: 100%;
+    }
+  }
+
+  &__description {
+    align-items: center;
+    padding-top: 18px;
+    padding-left: 20px;
+    font-size: $fs-card;
+    font-weight: $fw-light;
+    @include mq-tablet {
+      padding-top: 40px;
+    }
+  }
+}

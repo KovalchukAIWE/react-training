@@ -1,18 +1,18 @@
-@import './additionalStyles/mixins';
-@import './additionalStyles/variables';
-@import './components/header/header';
-@import './components/bg/bg';
-@import './components/our-mission/our-mission';
-@import './components/team-squares/team-squares';
-@import './components/cover-primary/cover-primary';
-@import './components/cover-alt/cover-alt';
-@import './components/cover/cover';
-@import './components/bg-different/bg-different';
-@import './components/bg-different-primary/bg-different-primary';
-@import './components/bg-different-light/bg-different-light';
-@import './components/marketing-strategy/market-strategy';
-@import './components/competitive/competitive';
-@import './components/target-customer/target-customer';
+@import './styles/mixins.module';
+@import './styles/variables.module';
+@import './components/Header/header';
+// @import './components/Background/bg';
+@import './components/OurMission/our-mission';
+@import './components/Team/team-squares';
+@import './components/CoverPrimary/cover-primary';
+// @import './components/CoverAlt/cover-alt';
+// @import './components/Cover/cover';
+// @import './components/BgDifferent/bg-different';
+// @import './components/BgPrimary/bg-different-primary';
+// @import './components/BgLight/bg-different-light';
+@import './components/Marketing/market-strategy';
+// @import './components/Competitive/competitive';
+@import './components/Customer/target-customer';
 
 * {
   margin: 0;

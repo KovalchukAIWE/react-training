@@ -1,0 +1,94 @@
+@import '../../styles/mixins.module';
+@import '../../styles/variables.module';
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  order: 2;
+  position: relative;
+  @include mq-desktop {
+    order: 1;
+  }
+}
+
+.image {
+  display: none;
+  @include mq-desktop {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/competitive.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    }
+  }
+    
+.list {
+  @include df;
+  flex-wrap: wrap;
+  width: 70%;
+
+  &__item {
+    @include df;
+  }
+
+  &__text {
+    width: 450px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    font-size: $fs-subtitle-s;
+    font-weight: $fw-light;
+    @include mq-tablet {
+      font-size: $fs-subtitle-m;
+    }
+  }
+
+  &__subtitle {
+    font-size: $fs-description-s;
+    font-weight: $fw-light;
+    @include mq-tablet {
+      font-size: $fs-description-m;
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  right: 7%;
+  top: 5%;
+  width: 228px;
+  height: 60px;
+}
+
+.text {
+  color: $c-text;
+  order: 1;
+  padding: 20px;
+  height: auto;
+  text-align: center;
+  @include mq-desktop {
+    padding-top: 10px;
+    padding-bottom: 200px;
+    text-align: left;
+    order: 2;
+  }
+
+  &__title {
+    margin-top: 150px;
+    margin-bottom: 40px;
+    font-size: $fs-title-s;
+    font-weight: $fw-semi-bold;
+
+    @include mq-tablet {
+      font-size: $fs-title-m;
+    }
+    
+    @include mq-desktop {
+      margin-top: 0;
+    }
+  }
+}

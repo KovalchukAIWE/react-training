@@ -1,0 +1,1 @@
+export { BgPrimary } from './BgPrimary';
