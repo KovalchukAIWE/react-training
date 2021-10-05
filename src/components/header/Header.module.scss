@@ -1,0 +1,30 @@
+@import '../../styles/mixins.module';
+@import '../../styles/variables.module';
+
+.header {
+  position: sticky;
+  z-index: 6;
+  top: 0;
+  background-color: $c-grey;
+}
+
+.nav {
+  width: 100%;
+  margin: 0 auto;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    color: white;
+    padding: 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    &:hover {
+      background-color: #807d76;
+      cursor: pointer;
+    }
+  }
+}

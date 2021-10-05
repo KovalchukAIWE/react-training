@@ -1,23 +1,26 @@
 import React from 'react';
+
+import styles from './Header.module.scss';
+
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div class='header-sticky'>
-            <nav class='navigation'>
-                <ul class='navigation-items'>
-                    <Link to='/bg' class='items'>Home</Link>
-                    <Link to='/bg-different' class='items'>BG different</Link>
-                    <Link to='/bg-primary' class='items'>BG primary</Link>
-                    <Link to='/bg-light' class='items'>BG light</Link>
-                    <Link to='/our-mission' class='items'>Our mission</Link>
-                    <Link to='/team' class='items'>Team</Link>
-                    <Link to='/cover-primary' class='items'>Cover primary</Link>
-                    <Link to='/cover-alt' class='items'>Cover alt</Link>
-                    <Link to='/cover' class='items'>Cover</Link>
-                    <Link to='/market-strategy' class='items'>Marketing</Link>
-                    <Link to='/competitive' class='items'>Competitive</Link>
-                    <Link to='/target-customer' class='items'>Customer</Link>
+        <div className={styles.header}>
+            <nav className={styles.nav}>
+                <ul className={styles.nav__items}>
+                    <Link to='/bg' className={styles.nav__item}>Home</Link>
+                    <Link to='/bg-different' className={styles.nav__item}>BG different</Link>
+                    <Link to='/bg-primary' className={styles.nav__item}>BG primary</Link>
+                    <Link to='/bg-light' className={styles.nav__item}>BG light</Link>
+                    <Link to='/our-mission' className={styles.nav__item}>Our mission</Link>
+                    <Link to='/team' className={styles.nav__item}>Team</Link>
+                    <Link to='/cover-primary' className={styles.nav__item}>Cover primary</Link>
+                    <Link to='/cover-alt' className={styles.nav__item}>Cover alt</Link>
+                    <Link to='/cover' className={styles.nav__item}>Cover</Link>
+                    <Link to='/market-strategy' className={styles.nav__item}>Marketing</Link>
+                    <Link to='/competitive' className={styles.nav__item}>Competitive</Link>
+                    <Link to='/target-customer' className={styles.nav__item}>Customer</Link>
                 </ul>
             </nav>
         </div>
