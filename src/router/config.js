@@ -1,77 +1,83 @@
-import { Background } from '../pages/Background';
-import { BgDifferent } from '../pages/BgDifferent';
-import { BgPrimary } from '../pages/BgPrimary';
-import { BgLight } from '../pages/BgLight';
-import { OurMission } from '../pages/OurMission';
-import { Team } from '../pages/Team';
-import { CoverPrimary } from '../pages/CoverPrimary';
-import { CoverAlt } from '../pages/CoverAlt';
-import { Cover } from '../pages/Cover';
-import { Marketing } from '../pages/Marketing';
-import { Competitive } from '../pages/Competitive';
-import { Customer } from '../pages/Customer';
+import Background from '../pages/Background/Background';
+import BgDifferent from '../pages/BgDifferent/BgDifferent';
+import BgPrimary from '../pages/BgPrimary/BgPrimary';
+import BgLight from '../pages/BgLight/BgLight';
+import OurMission from '../pages/OurMission/OurMission';
+import Team from '../pages/Team/Team';
+import CoverPrimary from '../pages/CoverPrimary/CoverPrimary';
+import CoverAlt from '../pages/CoverAlt/CoverAlt';
+import Cover from '../pages/Cover/Cover';
+import Marketing from '../pages/Marketing/Marketing';
+import Competitive from '../pages/Competitive/Competitive';
+import Customer from '../pages/Customer/Customer';
+import NotFound from '../pages/NotFound/NotFound';
 
 const routes = [
   {
     path: '/bg',
     exact: true,
-    component: Background
+    component: Background,
   },
   {
     path: '/bg-different',
     exact: true,
-    component: BgDifferent
+    component: BgDifferent,
   },
   {
     path: '/bg-primary',
     exact: true,
-    component: BgPrimary
+    component: BgPrimary,
   },
   {
     path: '/bg-light',
     exact: true,
-    component: BgLight
+    component: BgLight,
   },
   {
     path: '/our-mission',
     exact: true,
-    component: OurMission
+    component: OurMission,
   },
   {
     path: '/team',
     exact: true,
-    component: Team
+    component: Team,
   },
   {
     path: '/cover-primary',
     exact: true,
-    component: CoverPrimary
+    component: CoverPrimary,
   },
   {
     path: '/cover-alt',
     exact: true,
-    component: CoverAlt
+    component: CoverAlt,
   },
   {
     path: '/cover',
     exact: true,
-    component: Cover
+    component: Cover,
   },
   {
     path: '/market-strategy',
     exact: true,
-    component: Marketing
+    component: Marketing,
   },
   {
     path: '/competitive',
     exact: true,
-    component: Competitive
+    component: Competitive,
   },
   {
     path: '/target-customer',
     exact: true,
-    component: Customer
-  }
-]
+    component: Customer,
+  },
+  {
+    path: '/not-found',
+    exact: true,
+    component: NotFound,
+  },
+];
 
 export default routes;

@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   background: $c-bg;
-
+  position: relative;
   &__text {
     color: $c-text-white;
     height: inherit;
@@ -22,12 +22,14 @@
 }
 
 .cards {
-  width: 90%;
+  position: absolute;
+  width: 83%;
+  top: 450px;
+  left: 177px;
   @include df;
   justify-content: space-between;
   margin: 0 auto;
   text-align: center;
-  margin-top: -400px;
 }
 
 .card {

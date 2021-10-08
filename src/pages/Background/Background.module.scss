@@ -9,7 +9,7 @@
   background-size: cover;
 
   &__text {
-    color: #FCF7F7;
+    color: #fcf7f7;
     height: inherit;
     margin: 0 auto;
     width: 1100px;
@@ -18,7 +18,7 @@
     text-align: center;
     font-weight: $fw-bold;
     font-size: $fs-title-s;
-    text-shadow: 4px 4px #73777A;
+    text-shadow: 4px 4px #73777a;
     @include mq-tablet {
       font-size: $fs-title-m;
     }
@@ -26,7 +26,7 @@
 }
 
 .logo {
-position: absolute;
-right: 120px;
-top: 65px;
+  position: absolute;
+  right: 120px;
+  top: 65px;
 }

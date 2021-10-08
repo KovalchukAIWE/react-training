@@ -1,1 +1,1 @@
-export { BgPrimary } from './BgPrimary';
+// export { BgPrimary } from "./BgPrimary";

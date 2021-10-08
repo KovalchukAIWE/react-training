@@ -9,22 +9,17 @@
   }
 }
 
-.imageWrapper{
-  width: 100%;
+.image {
   height: auto;
   order: 2;
-  @include mq-desktop {
-    order: 1;
-    width: 701px;
-    }
-}
-
-.image {
   width: 701px;
-  height: 100%;
+  height: auto;
   background-image: url(../../images/cover-alt.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  @include mq-desktop {
+    order: 1;
+  }
 }
 
 .text {
@@ -34,9 +29,10 @@
   height: auto;
   text-align: center;
   @include mq-desktop {
-    padding: 347px 107px 253px;
+    padding: 347px 0 253px 107px;
     text-align: left;
     order: 2;
+    width: 955px;
   }
 
   &__title {

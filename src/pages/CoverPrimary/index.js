@@ -1,1 +1,1 @@
-export { CoverPrimary } from './CoverPrimary';
+// export { CoverPrimary } from "./CoverPrimary";

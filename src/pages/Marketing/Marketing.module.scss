@@ -15,11 +15,11 @@
 
 .imageWrapper {
   width: 100%;
-      height: auto;
-      order: 2;
-      @include mq-desktop {
-        order: 1;
-      }
+  height: auto;
+  order: 2;
+  @include mq-desktop {
+    order: 1;
+  }
 }
 
 .links {
@@ -38,6 +38,7 @@
   &__title {
     font-size: $fs-subtitle-s;
     font-weight: $fw-light;
+    margin-bottom: 10px;
     @include mq-tablet {
       font-size: $fs-subtitle;
     }
@@ -61,7 +62,7 @@
   @include mq-desktop {
     padding-left: 50%;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 242px;
     text-align: left;
     order: 2;
   }

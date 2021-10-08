@@ -10,13 +10,14 @@
   align-items: center;
   justify-content: center;
   @include mq-desktop {
-    justify-content: space-around;
-    padding: 170px 20px;
+    justify-content: space-evenly;
+    padding: 344px 0 234px 0;
+    margin: 0 auto;
   }
 }
 
 .text {
-  color: #4F4F4F;
+  color: $c-text;
   width: 550px;
   text-align: center;
   @include mq-desktop {
@@ -35,7 +36,7 @@
     }
   }
 
-  &__description{
+  &__description {
     font-size: $fs-description-s;
     font-weight: $fw-light;
     @include mq-tablet {
@@ -46,36 +47,9 @@
 
 .teammates {
   color: $c-text;
-  width: 630px;
+  width: 1120px;
   display: flex;
   flex-wrap: wrap;
-
-  &__card {
-    width: 315px;
-    height: 170px;
-    display: flex;
-    padding: 15px 0 15px 15px;
-  }
-
-  &__photo {
-    width: 90px;
-    height: 90px;
-    @include mq-tablet {
-      width: 140px;
-      height: 100%;
-    }
-  }
-
-  &__description {
-    align-items: center;
-    padding-top: 18px;
-    padding-left: 20px;
-    font-size: $fs-card;
-    font-weight: $fw-light;
-    @include mq-tablet {
-      padding-top: 40px;
-    }
-  }
 }
 
 .logo {

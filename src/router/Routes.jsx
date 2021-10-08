@@ -3,18 +3,20 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import routes from './config';
 
 const Routes = () => {
-  return (    
+  return (
     <Switch>
       {routes.map((el) => {
-        if(el.path==='/') {
-          return (<Route path={el.path} exact>
-            <Redirect to='/bg' />
-          </Route>)
+        if (el.path === '/') {
+          return (
+            <Route path={el.path} exact>
+              <Redirect to="/bg" />
+            </Route>
+          );
         }
-        return <Route path={el.path} exact component={el.component}/>
+        return <Route key={el.exact} path={el.path} component={el.component} />;
       })}
     </Switch>
   );
-}
+};
 
-export { Routes };
+export default Routes;
