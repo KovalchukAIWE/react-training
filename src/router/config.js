@@ -1,16 +1,16 @@
-import Background from '../pages/Background/Background';
-import BgDifferent from '../pages/BgDifferent/BgDifferent';
-import BgPrimary from '../pages/BgPrimary/BgPrimary';
-import BgLight from '../pages/BgLight/BgLight';
-import OurMission from '../pages/OurMission/OurMission';
-import Team from '../pages/Team/Team';
-import CoverPrimary from '../pages/CoverPrimary/CoverPrimary';
-import CoverAlt from '../pages/CoverAlt/CoverAlt';
-import Cover from '../pages/Cover/Cover';
-import Marketing from '../pages/Marketing/Marketing';
-import Competitive from '../pages/Competitive/Competitive';
-import Customer from '../pages/Customer/Customer';
-import NotFound from '../pages/NotFound/NotFound';
+import Background from '../pages/bg';
+import BgDifferent from '../pages/bg-different';
+import BgPrimary from '../pages/bg-primary';
+import BgLight from '../pages/bg-light';
+import OurMission from '../pages/our-mission';
+import Team from '../pages/team';
+import CoverPrimary from '../pages/cover-primary';
+import CoverAlt from '../pages/cover-alt';
+import Cover from '../pages/cover';
+import Marketing from '../pages/marketing';
+import Competitive from '../pages/competitive';
+import Customer from '../pages/customer';
+import NotFound from '../pages/not-found';
 
 const routes = [
   {
@@ -59,7 +59,7 @@ const routes = [
     component: Cover,
   },
   {
-    path: '/market-strategy',
+    path: '/marketing',
     exact: true,
     component: Marketing,
   },

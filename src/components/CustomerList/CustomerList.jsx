@@ -13,12 +13,8 @@ const CustomerList = ({ subtitle, description }) => {
 };
 
 CustomerList.propTypes = {
-  description: PropTypes.string,
-  subtitle: PropTypes.string,
-};
-CustomerList.defaultProps = {
-  description: '',
-  subtitle: '',
+  description: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
 };
 
 export default CustomerList;

@@ -15,12 +15,8 @@ const Company = ({ title, subtitle }) => {
 };
 
 Company.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-};
-Company.defaultProps = {
-  title: '',
-  subtitle: '',
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
 };
 
 export default Company;

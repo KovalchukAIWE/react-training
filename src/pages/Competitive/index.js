@@ -1,1 +1,1 @@
-// export default Competitive from "./Competitive";
+export { default } from './Competitive';

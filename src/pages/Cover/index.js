@@ -1,1 +1,1 @@
-// export { Cover } from "./Cover";
+export { default } from './Cover';

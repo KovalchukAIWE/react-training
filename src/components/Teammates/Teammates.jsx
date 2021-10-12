@@ -17,14 +17,9 @@ const Teammates = ({ img, name, role }) => {
 };
 
 Teammates.propTypes = {
-  name: PropTypes.string,
-  role: PropTypes.string,
-  img: PropTypes.string,
-};
-Teammates.defaultProps = {
-  name: '',
-  role: '',
-  img: '',
+  name: PropTypes.string.isRequired,
+  role: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
 };
 
 export default Teammates;

@@ -1,1 +1,0 @@
-// export { CoverAlt } from "./CoverAlt";

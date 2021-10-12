@@ -35,7 +35,7 @@ const Header = () => (
         <Link to="/cover" className={styles.nav__item}>
           Cover
         </Link>
-        <Link to="/market-strategy" className={styles.nav__item}>
+        <Link to="/marketing" className={styles.nav__item}>
           Marketing
         </Link>
         <Link to="/competitive" className={styles.nav__item}>

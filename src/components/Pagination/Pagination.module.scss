@@ -1,0 +1,36 @@
+@import '../../styles/mixins.module.scss';
+@import '../../styles/variables.module';
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+
+.pages {
+  width: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  padding: 5px 8px;
+  color: $c-text;
+  &.active {
+    color: #e0f0ec;
+  }
+}
+
+.link:hover {
+  background-color: #e0f0ec;
+}
+
+// li {
+//   color: red;
+//   &.active {
+//     color: #e0f0ec;
+//   }
+// }

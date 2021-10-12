@@ -1,1 +1,1 @@
-// export { Marketing } from "./Marketing";
+export { default } from './Marketing';
