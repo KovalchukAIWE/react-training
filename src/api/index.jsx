@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import Context from '../components/Context';
-import BlockList from '../components/BlockList/BlockList';
-import Pagination from '../components/Pagination/Pagination';
+import BlockList from '../components/BlockList';
+import Pagination from '../components/Pagination';
 
 import styles from './styles.module.scss';
 
@@ -29,9 +29,9 @@ const GetBlocks = () => {
   const firstItemIndex = lastItemIndex - itemsPerPage;
   const currentItemIndex = array.slice(firstItemIndex, lastItemIndex);
 
-  const paginate = pageNumber => setCurrentPage(pageNumber);
-  const nextPage = () => setCurrentPage(prev => prev + 1);
-  const prevPage = () => setCurrentPage(prev => prev - 1);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const nextPage = () => setCurrentPage((prev) => prev + 1);
+  const prevPage = () => setCurrentPage((prev) => prev - 1);
 
   function handleQuantityChange(e) {
     setItemsPerPage(e.target.value);

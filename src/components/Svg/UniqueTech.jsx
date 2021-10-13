@@ -12,16 +12,16 @@ const UniqueTech = () => {
       <path
         d="M77.333 87L106.333 58L77.333 29"
         stroke="#62E3FF"
-        stroke-width="9.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="9.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M38.667 29L9.66699 58L38.667 87"
         stroke="#62E3FF"
-        stroke-width="9.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="9.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

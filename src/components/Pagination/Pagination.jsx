@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './Pagination.module.scss';
 
@@ -12,7 +13,7 @@ const Pagination = ({ itemsPerPage, totalItems, paginate }) => {
   return (
     <div className={styles.wrapper}>
       <ul className={styles.pages}>
-        {pageNumbers.map(number => (
+        {pageNumbers.map((number) => (
           <li key={number}>
             <a
               className={styles.link}
@@ -26,6 +27,12 @@ const Pagination = ({ itemsPerPage, totalItems, paginate }) => {
       </ul>
     </div>
   );
+};
+
+Pagination.propTypes = {
+  itemsPerPage: PropTypes.number.isRequired,
+  totalItems: PropTypes.number.isRequired,
+  paginate: PropTypes.number.isRequired,
 };
 
 export default Pagination;

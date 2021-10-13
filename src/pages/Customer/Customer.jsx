@@ -5,7 +5,7 @@ import data from '../../components/CustomerList/data';
 import styles from './customer.module.scss';
 
 import { LogoDark } from '../../components/Logo/Logo';
-import CustomerList from '../../components/CustomerList/CustomerList';
+import CustomerList from '../../components/CustomerList';
 
 const Customer = () => {
   return (
@@ -19,7 +19,7 @@ const Customer = () => {
         </div>
         <h1 className={styles.text__title}>Target Customer</h1>
         <div className={styles.text__wrapper}>
-          {data.card.map(el => (
+          {data.card.map((el) => (
             <CustomerList {...el} />
           ))}
         </div>

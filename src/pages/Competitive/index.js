@@ -1,1 +1,1 @@
-export { default } from './Competitive';
+export { default } from './competitive';

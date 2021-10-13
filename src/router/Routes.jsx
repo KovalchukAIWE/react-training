@@ -5,7 +5,7 @@ import routes from './config';
 const Routes = () => {
   return (
     <Switch>
-      {routes.map(el => {
+      {routes.map((el) => {
         if (el.path === '/') {
           return (
             <Route path={el.path} exact>

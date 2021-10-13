@@ -12,23 +12,23 @@ const MarketTraction = () => {
       <path
         d="M58 106.333V58"
         stroke="#62E3FF"
-        stroke-width="9"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M87 106.333V29"
         stroke="#62E3FF"
-        stroke-width="9"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M29 106.333V87"
         stroke="#62E3FF"
-        stroke-width="9"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

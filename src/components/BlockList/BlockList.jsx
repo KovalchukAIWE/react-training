@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './BlockList.module.scss';
 
@@ -37,7 +38,7 @@ const BlockList = ({ array, loading }) => {
           </tr>
         </thead>
         <tbody>
-          {array.map(item => {
+          {array.map((item) => {
             return (
               <>
                 <tr key={item.level}>
@@ -81,6 +82,11 @@ const BlockList = ({ array, loading }) => {
       </table>
     </div>
   );
+};
+
+BlockList.propTypes = {
+  array: PropTypes.string.isRequired,
+  loading: PropTypes.string.isRequired,
 };
 
 export default BlockList;

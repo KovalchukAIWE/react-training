@@ -13,9 +13,9 @@ const MarketingStar = () => {
       <path
         d="M35 17.5L40.4075 28.455L52.5 30.2225L43.75 38.745L45.815 50.785L35 45.0975L24.185 50.785L26.25 38.745L17.5 30.2225L29.5925 28.455L35 17.5Z"
         stroke="white"
-        stroke-width="5.14286"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="5.14286"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

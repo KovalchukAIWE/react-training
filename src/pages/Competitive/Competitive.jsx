@@ -5,7 +5,7 @@ import data from '../../components/Company/data';
 import styles from './competitive.module.scss';
 
 import { LogoDark } from '../../components/Logo/Logo';
-import Company from '../../components/Company/Company';
+import Company from '../../components/Company';
 
 const Competitive = () => {
   return (
@@ -17,7 +17,7 @@ const Competitive = () => {
         <div className={styles.text}>
           <h1 className={styles.text__title}>The Competition</h1>
           <div className={styles.list}>
-            {data.card.map(el => (
+            {data.card.map((el) => (
               <Company {...el} />
             ))}
           </div>

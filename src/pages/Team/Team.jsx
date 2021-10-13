@@ -5,7 +5,7 @@ import styles from './team.module.scss';
 import data from '../../components/Teammates/data';
 
 import { LogoDark } from '../../components/Logo/Logo';
-import Teammates from '../../components/Teammates/Teammates';
+import Teammates from '../../components/Teammates';
 
 const Team = () => {
   return (
@@ -22,7 +22,7 @@ const Team = () => {
         </h2>
       </div>
       <div className={styles.teammates}>
-        {data.team.map(el => (
+        {data.team.map((el) => (
           <Teammates {...el} />
         ))}
       </div>
