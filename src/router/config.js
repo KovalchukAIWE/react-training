@@ -11,6 +11,7 @@ import Marketing from '../pages/marketing';
 import Competitive from '../pages/competitive';
 import Customer from '../pages/customer';
 import NotFound from '../pages/not-found';
+import TezosBlocks from '../pages/tezos-blocks/tezos-blocks';
 
 const routes = [
   {
@@ -77,6 +78,11 @@ const routes = [
     path: '/not-found',
     exact: true,
     component: NotFound,
+  },
+  {
+    path: '/tezos-blocks',
+    exact: true,
+    component: TezosBlocks,
   },
 ];
 

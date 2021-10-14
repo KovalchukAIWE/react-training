@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './BlockList.module.scss';
 
 const numeral = require('numeral');
+const dayjs = require('dayjs');
 
 const BlockList = ({ array, loading }) => {
   if (loading) {
@@ -41,8 +42,8 @@ const BlockList = ({ array, loading }) => {
           {array.map((item) => {
             return (
               <>
-                <tr key={item.level}>
-                  <td>
+                <tr>
+                  <td key={item.level}>
                     <div className={styles.row_title}>
                       {item.level.toLocaleString()}
                     </div>
@@ -52,7 +53,7 @@ const BlockList = ({ array, loading }) => {
                   </td>
                   <td>
                     <div className={styles.row_title}>
-                      {numeral(item.timestamp).format('00.00.00 00:00:00')}
+                      {dayjs(item.timestamp).format('YYYY-MM-DD HH:mm:ss')}
                     </div>
                   </td>
                   <td>
@@ -69,6 +70,7 @@ const BlockList = ({ array, loading }) => {
                   <td>
                     <div className={styles.row_title}>
                       {numeral(item.fees).format('0')}
+                      &#42793;
                     </div>
                   </td>
                   <td>
@@ -85,8 +87,8 @@ const BlockList = ({ array, loading }) => {
 };
 
 BlockList.propTypes = {
-  array: PropTypes.string.isRequired,
-  loading: PropTypes.string.isRequired,
+  array: PropTypes.arrayOf(PropTypes.object).isRequired,
+  loading: PropTypes.bool.isRequired,
 };
 
 export default BlockList;

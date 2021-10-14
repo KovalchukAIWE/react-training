@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Context from '../components/Context';
 import BlockList from '../components/BlockList';
 import Pagination from '../components/Pagination';
 
@@ -11,8 +10,6 @@ const GetBlocks = () => {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
-
-  useContext(Context);
 
   useEffect(() => {
     const apiUrl = 'https://api.teztracker.com/v2/data/tezos/mainnet/blocks';
@@ -40,6 +37,7 @@ const GetBlocks = () => {
   return (
     <>
       <div className={styles.wrapper}>
+        <h2 className={styles.page}>Page {currentPage}</h2>
         <p className={styles.block_header}>Blocks list</p>
         <div>
           <p>Items per page</p>
@@ -48,9 +46,7 @@ const GetBlocks = () => {
             defaultValue={itemsPerPage}
             onChange={handleQuantityChange}
           >
-            <option selected value="5">
-              5
-            </option>
+            <option defaultValue="5">5</option>
             <option value="10">10</option>
             <option value="15">15</option>
             <option value="20">20</option>

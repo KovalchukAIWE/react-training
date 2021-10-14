@@ -19,7 +19,7 @@
 .buttons {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 15px;
   margin-bottom: 20px;
 }
@@ -33,4 +33,9 @@
     cursor: pointer;
     background-color: #e0f0ec;
   }
+}
+
+.page {
+  display: flex;
+  justify-content: flex-end;
 }
