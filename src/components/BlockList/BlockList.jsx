@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './BlockList.module.scss';
 
-const numeral = require('numeral');
+// const numeral = require('numeral');
 const dayjs = require('dayjs');
 
 const BlockList = ({ array, loading }) => {
@@ -63,13 +63,13 @@ const BlockList = ({ array, loading }) => {
                   </td>
                   <td>
                     <div className={styles.row_title}>
-                      {item.volume}
+                      {(item.volume * 1e-7).toFixed(6)}
                       &#42793;
                     </div>
                   </td>
                   <td>
                     <div className={styles.row_title}>
-                      {numeral(item.fees).format('0')}
+                      {(item.fees * 1e-6).toFixed(6)}
                       &#42793;
                     </div>
                   </td>
