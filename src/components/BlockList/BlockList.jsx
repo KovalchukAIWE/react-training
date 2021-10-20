@@ -42,14 +42,14 @@ const BlockList = ({ array, loading }) => {
           {array.map((item) => {
             return (
               <>
-                <tr>
-                  <td key={item.level}>
+                <tr key={item.chainId}>
+                  <td>
                     <div className={styles.row_title}>
                       {item.level.toLocaleString()}
                     </div>
                   </td>
                   <td>
-                    <div className={styles.row_title}>{item.baker}</div>
+                    <div className={styles.row_title}>{item.bakerName}</div>
                   </td>
                   <td>
                     <div className={styles.row_title}>
