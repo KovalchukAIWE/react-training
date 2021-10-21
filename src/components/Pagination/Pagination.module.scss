@@ -19,18 +19,9 @@
   text-decoration: none;
   padding: 5px 8px;
   color: $c-text;
-  &.active {
-    color: #e0f0ec;
-  }
 }
 
 .link:hover {
   background-color: #e0f0ec;
+  cursor: pointer;
 }
-
-// li {
-//   color: red;
-//   &.active {
-//     color: #e0f0ec;
-//   }
-// }
