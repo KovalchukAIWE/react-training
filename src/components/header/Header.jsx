@@ -47,7 +47,7 @@ const Header = () => (
         <Link to="/not-found" className={styles.nav__item}>
           404
         </Link>
-        <Link to="/tezos-blocks" className={styles.nav__item}>
+        <Link to="/blocks" className={styles.nav__item}>
           Tezos Block
         </Link>
       </ul>

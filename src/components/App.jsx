@@ -4,7 +4,10 @@ import Header from './Header/Header';
 import Routes from '../router/Routes';
 import Context from './Context';
 
-const App = () => {
+function App() {
+  // const value = {
+  //   newArray,
+  // };
   return (
     <Context.Provider>
       <BrowserRouter>
@@ -13,5 +16,5 @@ const App = () => {
       </BrowserRouter>
     </Context.Provider>
   );
-};
+}
 export default App;

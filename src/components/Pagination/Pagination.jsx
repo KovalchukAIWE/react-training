@@ -14,7 +14,7 @@ const Pagination = ({ itemsPerPage, totalItems, currentPage, paginate }) => {
     <div className={styles.wrapper}>
       <ul className={styles.pages}>
         {pageNumbers.map((number) => (
-          <li key={number}>
+          <li key={number} className={styles.active}>
             <a
               className={styles.link}
               href={currentPage}
@@ -33,7 +33,7 @@ Pagination.propTypes = {
   itemsPerPage: PropTypes.number.isRequired,
   totalItems: PropTypes.number.isRequired,
   paginate: PropTypes.func.isRequired,
-  currentPage: PropTypes.number.isRequired,
+  currentPage: PropTypes.func.isRequired,
 };
 
 export default Pagination;

@@ -21,6 +21,13 @@
   color: $c-text;
 }
 
+.link.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+// .list a:hover:not(.active) {background-color: #ddd;}
+
 .link:hover {
   background-color: #e0f0ec;
   cursor: pointer;
