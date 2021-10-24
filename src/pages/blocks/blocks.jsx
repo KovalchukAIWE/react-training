@@ -14,10 +14,10 @@ const Blocks = () => {
 
   useEffect(() => {
     // const apiUrl = 'https://api.teztracker.com/v2/data/tezos/mainnet/blocks';
-    const getData = async () => {
+    const getData = () => {
       setLoading(true);
       // const newBlocks = await axios.get(apiUrl);
-      const newBlocks = await getBlocks;
+      const newBlocks = getBlocks;
       setBlocks(newBlocks.data);
       setLoading(false);
     };
