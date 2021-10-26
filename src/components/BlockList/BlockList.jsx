@@ -5,10 +5,10 @@ import styles from './BlockList.module.scss';
 
 const dayjs = require('dayjs');
 
-const BlockList = ({ blocks, loading }) => {
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
+const BlockList = ({ blocks }) => {
+  // if (loading) {
+  //   return <h2>Loading...</h2>;
+  // }
   return (
     <div className={styles.block}>
       <table className={styles.table}>
@@ -87,7 +87,7 @@ const BlockList = ({ blocks, loading }) => {
 
 BlockList.propTypes = {
   blocks: PropTypes.arrayOf(PropTypes.object).isRequired,
-  loading: PropTypes.bool.isRequired,
+  // loading: PropTypes.bool.isRequired,
 };
 
 export default BlockList;
