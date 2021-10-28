@@ -2,70 +2,78 @@
 /* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
-import BlockList from '../../components/BlockList';
+// import BlockList from '../../components/BlockList';
 // import Pagination from '../../components/Pagination';
-import getBlocks from '../../api';
+// import { getDataFromApi } from '../../api';
+import Table from '../../components/Table';
 
 import styles from './blocks.module.scss';
 
 const Blocks = () => {
   // eslint-disable-next-line no-unused-vars
-  const [blocks, setBlocks] = useState([]);
-  // const [loading, setLoading] = useState(false);
-  const [currPage, setCurrPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(5);
-  const [offset, setOffset] = useState(15);
+  // const [blocks, setBlocks] = useState([]);
+
+  // const [page, setPage] = useState(1);
+  // const [totalPages, setTotalPages] = useState(0);
+  // const [pageSize, setPageSize] = useState(10);
+  // const [offset, setOffset] = useState(10);
+
+  // const pageSizes = [10, 20, 50];
+
+  // const handlePageChange = (event, value) => {
+  //   setPage(value);
+  // };
+
+  // const handlePageSizeChange = (event) => {
+  //   setPageSize(event.target.value);
+  //   setPage(1);
+  // };
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => {
-    const getData = async () => {
-      const currentPage = offset / itemsPerPage + 1;
-      const newBlocks = await getBlocks(itemsPerPage, offset);
-      console.log(newBlocks, currentPage);
-      setBlocks(newBlocks);
-      setCurrPage(currentPage);
-    };
-    getData();
-  }, [itemsPerPage, offset]);
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     const currentPage = offset / pageSize + 1;
+  //     const newBlocks = await getDataFromApi(pageSize, offset);
+  //     console.log(newBlocks, currentPage);
+  //     setBlocks(newBlocks);
+  //     setPage(currentPage);
+  //   };
+  //   getData();
+  // }, [pageSize, offset]);
 
-  // const lastItemIndex = currentPage * itemsPerPage;
-  // const firstItemIndex = lastItemIndex - itemsPerPage;
+  // const lastItemIndex = page * offset;
+  // const firstItemIndex = lastItemIndex - offset;
   // const currentItemIndex = blocks.slice(firstItemIndex, lastItemIndex);
 
-  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
-  // const nextPage = () => setCurrentPage((prev) => prev + 1);
-  // const prevPage = () => setCurrentPage((prev) => prev - 1);
-
-  function handleQuantityChange(e) {
-    setItemsPerPage(e.target.value);
-  }
+  // const paginate = (pageNumber) => setTotalPages(pageNumber);
+  // const nextPage = () => setTotalPages((prev) => prev + 1);
+  // const prevPage = () => setTotalPages((prev) => prev - 1);
 
   return (
     <>
       <div className={styles.wrapper}>
-        <h2 className={styles.page}>Page {currPage}</h2>
+        <h2 className={styles.page}>Page</h2>
         <p className={styles.block_header}>Blocks list</p>
         <div>
           <p>Items per page</p>
-          <select
-            className={styles.select}
-            defaultValue={itemsPerPage}
-            onChange={handleQuantityChange}
-          >
-            <option defaultValue="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-          </select>
+          {/* <select onChange={handlePageSizeChange} value={pageSize}>
+            {pageSizes.map((size) => (
+              <option key={size} value={size}>
+                {size}
+              </option>
+            ))}
+          </select> */}
         </div>
-        <BlockList blocks={blocks} />
+        <Table />
+        {/* <BlockList blocks={blocks} /> */}
       </div>
-      {/* <div>
-        <Pagination
-          itemsPerPage={itemsPerPage}
+      <div>
+        {/* <Pagination
+          page={currentItemIndex}
           totalItems={blocks.length}
-          // paginate={paginate}
-        />
+          paginate={paginate}
+          // onChange={handlePageChange}
+        /> */}
         <div className={styles.buttons}>
           <button className={styles.button} type="button">
             prev
@@ -74,7 +82,7 @@ const Blocks = () => {
             next
           </button>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

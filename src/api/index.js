@@ -1,17 +1,14 @@
+/* eslint-disable import/prefer-default-export */
 import axios from 'axios';
+import { BASE_URL } from './config';
 
 const NETWORK = 'mainnet';
 
-const apiService = axios.create({
-  baseURL: `https://api.teztracker.com/v2/data/tezos/${NETWORK}`,
-});
-
-const getBlocks = async (limit, offset) => {
-  const { data } = await apiService.get(
-    `/blocks?offset=${offset}&limit=${limit}`,
-    {},
-  );
-  return data;
+export const getDataFromApi = async (offset = 0, limit = 10) => {
+  const url = `${BASE_URL}/${NETWORK}/blocks?offset=${offset}&limit=${limit}`;
+  const res = await axios.get(url);
+  return {
+    blocks: res.data,
+    totalCount: res.headers['x-total-count'],
+  };
 };
-
-export default getBlocks;

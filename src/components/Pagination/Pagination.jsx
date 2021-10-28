@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import styles from './Pagination.module.scss';
 
-const Pagination = ({ itemsPerPage, totalItems, currentPage, paginate }) => {
+const Pagination = ({ offset, totalItems, page, paginate }) => {
   const pageNumbers = [];
 
-  for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i += 1) {
+  for (let i = 1; i <= Math.ceil(totalItems / offset); i += 1) {
     pageNumbers.push(i);
   }
 
@@ -17,7 +17,7 @@ const Pagination = ({ itemsPerPage, totalItems, currentPage, paginate }) => {
           <li key={number} className={styles.active}>
             <a
               className={styles.link}
-              href={currentPage}
+              href={page}
               onClick={() => paginate(number)}
             >
               {number}
@@ -30,10 +30,10 @@ const Pagination = ({ itemsPerPage, totalItems, currentPage, paginate }) => {
 };
 
 Pagination.propTypes = {
-  itemsPerPage: PropTypes.number.isRequired,
+  offset: PropTypes.number.isRequired,
   totalItems: PropTypes.number.isRequired,
   paginate: PropTypes.func.isRequired,
-  currentPage: PropTypes.func.isRequired,
+  page: PropTypes.func.isRequired,
 };
 
 export default Pagination;

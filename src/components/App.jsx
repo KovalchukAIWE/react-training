@@ -2,19 +2,16 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './Header/Header';
 import Routes from '../router/Routes';
-import Context from './Context';
+import Provider from './Provider/Provider';
 
 function App() {
-  // const value = {
-  //   newArray,
-  // };
   return (
-    <Context.Provider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Provider>
         <Header />
         <Routes />
-      </BrowserRouter>
-    </Context.Provider>
+      </Provider>
+    </BrowserRouter>
   );
 }
 export default App;
