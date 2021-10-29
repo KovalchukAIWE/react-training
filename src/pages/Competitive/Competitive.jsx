@@ -2,7 +2,7 @@ import React from 'react';
 
 import data from '../../components/Company/data';
 
-import styles from './competitive.module.scss';
+import styles from './Competitive.module.scss';
 
 import { LogoDark } from '../../components/Logo/Logo';
 import Company from '../../components/Company';

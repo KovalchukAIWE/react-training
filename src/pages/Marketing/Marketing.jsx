@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './marketing.module.scss';
+import styles from './Marketing.module.scss';
 
 import { LogoDark } from '../../components/Logo/Logo';
 import MarketingStar from '../../components/Svg/MarketingStar';

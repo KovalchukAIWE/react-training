@@ -9,7 +9,7 @@ const Routes = () => {
         if (el.path === '/') {
           return (
             <Route path={el.path} exact>
-              <Redirect to="/bg" />
+              <Redirect to="/Bg" />
             </Route>
           );
         }

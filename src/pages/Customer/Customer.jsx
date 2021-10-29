@@ -2,7 +2,7 @@ import React from 'react';
 
 import data from '../../components/CustomerList/data';
 
-import styles from './customer.module.scss';
+import styles from './Customer.module.scss';
 
 import { LogoDark } from '../../components/Logo/Logo';
 import CustomerList from '../../components/CustomerList';

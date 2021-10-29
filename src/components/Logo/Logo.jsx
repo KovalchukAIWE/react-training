@@ -33,8 +33,6 @@ const LogoDark = () => {
   );
 };
 
-export { LogoDark };
-
 const LogoLight = () => {
   return (
     <div>
@@ -68,4 +66,4 @@ const LogoLight = () => {
   );
 };
 
-export { LogoLight };
+export { LogoDark, LogoLight };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { LogoLight } from '../../components/Logo/Logo';
 
-import styles from './bg.module.scss';
+import styles from './Bg.module.scss';
 
 const Background = () => {
   return (

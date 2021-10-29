@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './cover-primary.module.scss';
+import styles from './CoverPrimary.module.scss';
 
 import { LogoDark } from '../../components/Logo/Logo';
 import CoverWeb from '../../components/Svg/CoverWeb';

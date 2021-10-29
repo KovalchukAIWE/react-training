@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './cover-alt.module.scss';
+import styles from './CoverAlt.module.scss';
 
 import { LogoDark } from '../../components/Logo/Logo';
 

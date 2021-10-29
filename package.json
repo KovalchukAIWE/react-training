@@ -30,8 +30,9 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "prepare": "husky install",
-    "lint:fix": "eslint ./src --fix --color"
+    "lint": "eslint ./src --fix --color",
+    "prepare": "husky install"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -67,8 +68,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "npm run lint:fix",
-      "git add"
+      "npm run lint",
+      "git add ."
     ]
   }
 }

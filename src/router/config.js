@@ -1,86 +1,86 @@
-import Background from '../pages/bg';
-import BgDifferent from '../pages/bg-different';
-import BgPrimary from '../pages/bg-primary';
-import BgLight from '../pages/bg-light';
-import OurMission from '../pages/our-mission';
-import Team from '../pages/team';
-import CoverPrimary from '../pages/cover-primary';
-import CoverAlt from '../pages/cover-alt';
-import Cover from '../pages/cover';
-import Marketing from '../pages/marketing';
-import Competitive from '../pages/competitive';
-import Customer from '../pages/customer';
-import NotFound from '../pages/not-found';
-import Blocks from '../pages/blocks';
+import Background from '../pages/Bg';
+import BgDifferent from '../pages/BgDifferent';
+import BgPrimary from '../pages/BgPrimary';
+import BgLight from '../pages/BgLight';
+import OurMission from '../pages/OurMission';
+import Team from '../pages/Team';
+import CoverPrimary from '../pages/CoverPrimary';
+import CoverAlt from '../pages/CoverAlt';
+import Cover from '../pages/Cover';
+import Marketing from '../pages/Marketing';
+import Competitive from '../pages/Competitive';
+import Customer from '../pages/Customer';
+import NotFound from '../pages/NotFound';
+import { Blocks } from '../pages/Blocks';
 
 const routes = [
   {
-    path: '/bg',
+    path: '/Bg',
     exact: true,
     component: Background,
   },
   {
-    path: '/bg-different',
+    path: '/BgDifferent',
     exact: true,
     component: BgDifferent,
   },
   {
-    path: '/bg-primary',
+    path: '/BgPrimary',
     exact: true,
     component: BgPrimary,
   },
   {
-    path: '/bg-light',
+    path: '/BgLight',
     exact: true,
     component: BgLight,
   },
   {
-    path: '/our-mission',
+    path: '/OurMission',
     exact: true,
     component: OurMission,
   },
   {
-    path: '/team',
+    path: '/Team',
     exact: true,
     component: Team,
   },
   {
-    path: '/cover-primary',
+    path: '/CoverPrimary',
     exact: true,
     component: CoverPrimary,
   },
   {
-    path: '/cover-alt',
+    path: '/CoverAlt',
     exact: true,
     component: CoverAlt,
   },
   {
-    path: '/cover',
+    path: '/Cover',
     exact: true,
     component: Cover,
   },
   {
-    path: '/marketing',
+    path: '/Marketing',
     exact: true,
     component: Marketing,
   },
   {
-    path: '/competitive',
+    path: '/Competitive',
     exact: true,
     component: Competitive,
   },
   {
-    path: '/target-customer',
+    path: '/Customer',
     exact: true,
     component: Customer,
   },
   {
-    path: '/not-found',
+    path: '/NotFound',
     exact: true,
     component: NotFound,
   },
   {
-    path: '/blocks',
+    path: '/Blocks',
     exact: true,
     component: Blocks,
   },

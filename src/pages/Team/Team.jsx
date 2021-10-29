@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './team.module.scss';
+import styles from './Team.module.scss';
 
 import data from '../../components/Teammates/data';
 

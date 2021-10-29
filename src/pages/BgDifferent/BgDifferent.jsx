@@ -4,7 +4,7 @@ import MarketTraction from '../../components/Svg/MarketTraction';
 import ProvenTeam from '../../components/Svg/ProvenTeam';
 import UniqueTech from '../../components/Svg/UniqueTech';
 
-import styles from './bg-different.module.scss';
+import styles from './BgDifferent.module.scss';
 
 const BgDifferent = () => {
   return (

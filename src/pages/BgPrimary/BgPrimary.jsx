@@ -1,16 +1,19 @@
 import React from 'react';
-import { LogoDark } from '../../components/Logo/Logo';
+import { LogoLight } from '../../components/Logo/Logo';
 import MarketTraction from '../../components/Svg/MarketTraction';
 import ProvenTeam from '../../components/Svg/ProvenTeam';
 import UniqueTech from '../../components/Svg/UniqueTech';
 
-import styles from './bg-light.module.scss';
+import styles from './BgPrimary.module.scss';
 
-const BgLight = () => {
+// const ThemeContext = React.createContext(themes.light);
+
+const BgPrimary = () => {
+  // const theme = useContext(ThemeContext);
   return (
     <div className={styles.background}>
       <div className={styles.logo}>
-        <LogoDark />
+        <LogoLight />
       </div>
       <h1 className={styles.background__text}>What makes us different?</h1>
       <div className={styles.cards}>
@@ -38,4 +41,4 @@ const BgLight = () => {
   );
 };
 
-export default BgLight;
+export default BgPrimary;

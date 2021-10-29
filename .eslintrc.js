@@ -22,6 +22,8 @@ module.exports = {
   plugins: ['react'],
   rules: {
     'react/jsx-props-no-spreading': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-unresolved': 'off',
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
 };

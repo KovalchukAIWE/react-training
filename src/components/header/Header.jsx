@@ -8,46 +8,46 @@ const Header = () => (
   <div className={styles.header}>
     <nav className={styles.nav}>
       <ul className={styles.nav__items}>
-        <Link to="/bg" className={styles.nav__item}>
+        <Link to="/Bg" className={styles.nav__item}>
           Home
         </Link>
-        <Link to="/bg-different" className={styles.nav__item}>
+        <Link to="/BgDifferent" className={styles.nav__item}>
           BG different
         </Link>
-        <Link to="/bg-primary" className={styles.nav__item}>
+        <Link to="/BgPrimary" className={styles.nav__item}>
           BG primary
         </Link>
-        <Link to="/bg-light" className={styles.nav__item}>
+        <Link to="/BgLight" className={styles.nav__item}>
           BG light
         </Link>
-        <Link to="/our-mission" className={styles.nav__item}>
+        <Link to="/OurMission" className={styles.nav__item}>
           Our mission
         </Link>
-        <Link to="/team" className={styles.nav__item}>
+        <Link to="/Team" className={styles.nav__item}>
           Team
         </Link>
-        <Link to="/cover-primary" className={styles.nav__item}>
+        <Link to="/CoverPrimary" className={styles.nav__item}>
           Cover primary
         </Link>
-        <Link to="/cover-alt" className={styles.nav__item}>
+        <Link to="/CoverAlt" className={styles.nav__item}>
           Cover alt
         </Link>
-        <Link to="/cover" className={styles.nav__item}>
+        <Link to="/Cover" className={styles.nav__item}>
           Cover
         </Link>
-        <Link to="/marketing" className={styles.nav__item}>
+        <Link to="/Marketing" className={styles.nav__item}>
           Marketing
         </Link>
-        <Link to="/competitive" className={styles.nav__item}>
+        <Link to="/Competitive" className={styles.nav__item}>
           Competitive
         </Link>
-        <Link to="/target-customer" className={styles.nav__item}>
+        <Link to="/Customer" className={styles.nav__item}>
           Customer
         </Link>
-        <Link to="/not-found" className={styles.nav__item}>
+        <Link to="/NotFound" className={styles.nav__item}>
           404
         </Link>
-        <Link to="/blocks" className={styles.nav__item}>
+        <Link to="/Blocks" className={styles.nav__item}>
           Tezos Block
         </Link>
       </ul>

@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import axios from 'axios';
 import { BASE_URL } from './config';
 
@@ -12,3 +11,5 @@ export const getDataFromApi = async (offset = 0, limit = 10) => {
     totalCount: res.headers['x-total-count'],
   };
 };
+
+export default getDataFromApi;

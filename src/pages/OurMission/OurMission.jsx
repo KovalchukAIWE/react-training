@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './our-mission.module.scss';
+import styles from './OurMission.module.scss';
 
 import { LogoDark } from '../../components/Logo/Logo';
 

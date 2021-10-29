@@ -1,16 +1,15 @@
 /* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
 import { BlocksContext } from '../Provider/Provider';
 import styles from './Table.module.scss';
 
 const dayjs = require('dayjs');
 
-const Table = () => {
+export const Table = () => {
   const { blocks } = useContext(BlocksContext);
   // console.log(blocks);
   if (!blocks) return null;
-  console.log(blocks);
+  // console.log(blocks);
 
   return (
     <div className={styles.block}>
@@ -86,5 +85,3 @@ const Table = () => {
     </div>
   );
 };
-
-export default Table;
