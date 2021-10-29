@@ -7,7 +7,7 @@ const dayjs = require('dayjs');
 
 export const Table = () => {
   const { blocks } = useContext(BlocksContext);
-  // console.log(blocks);
+  console.log(blocks);
   if (!blocks) return null;
   // console.log(blocks);
 

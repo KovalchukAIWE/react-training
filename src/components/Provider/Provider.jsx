@@ -1,7 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable arrow-body-style */
 import React, { createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { getDataFromApi } from '../../api';
@@ -14,8 +11,8 @@ const Provider = ({ children }) => {
   const [blocks, setBlocks] = useState([]);
   const [totalCount, setTotalCount] = useState('');
 
-  useEffect(async () => {
-    const blocksFromApi = await getDataFromApi();
+  useEffect(() => {
+    const blocksFromApi = getDataFromApi();
     setBlocks(blocksFromApi);
   }, [limit, offset]);
 
